@@ -3,17 +3,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-main {
-    width: 100%;
-    padding-top: 1.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-}
