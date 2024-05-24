@@ -1,10 +1,11 @@
-import Header from '../components/Header'
+import Headerb from '../components/Headerb'
+import PageTitle from '../components/PageTitle'
 
 export default function contato(){
     return (
         <>
-            <Header/>
-            <h1>Entre em contato com a nossa loja!</h1>
+            <Headerb />
+            <PageTitle text="Entre em contato com a nossa loja." color="success" />
             {/* restante da página */}
         </>
     )

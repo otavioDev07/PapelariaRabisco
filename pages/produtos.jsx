@@ -1,10 +1,11 @@
-import Header from '../components/Header'
+import Headerb from '../components/Headerb'
+import PageTitle from '../components/PageTitle'
 
 export default function produtos(){
     return (
         <>
-            <Header/>
-            <h1>Conheça nossos produtos</h1>
+            <Headerb />
+            <PageTitle text="Conheça nossos produtos!" color="success" />
             {/* restante da página */}
         </>
     )

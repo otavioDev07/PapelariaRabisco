@@ -1,10 +1,13 @@
-import Header from '../components/Header'
+import Headerb from '@/components/Headerb'
+import PageTitle from '@/components/PageTitle'
+import Carrossel from '@/components/Carrossel'
 
 export default function home(){
     return (
         <>
-            <Header/>
-            <h1>Bem vindo à Papelaria Rabisco</h1>
+            <Headerb />
+            <PageTitle text="Seja bem vindo a Papelaria Rabisco." color="success" />
+            <Carrossel />
             {/* Restante da página */}
         </>
     )
