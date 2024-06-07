@@ -7,10 +7,10 @@ export default function CardProduto(props) {
             <img src={props.imageSrc} className="card-img-top"/>
             <div className="card-body">
                 <p className="card-text">{props.desc}</p>
-                <p>{props.qtd} unidade (s) em estoque</p>
+                <button type="button" class="btn btn-outline-info">R$ {props.valor}</button>
             </div>
             <div className="card-footer">
-                <h6 className="card-subtitle mb-2 text-body-secondary">R$ {props.valor}</h6>
+                <h6 className="card-subtitle mb-2 text-body-secondary">{props.qtd} unidade (s) em estoque</h6>
             </div>
         </div>
     )
