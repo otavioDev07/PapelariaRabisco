@@ -1,4 +1,4 @@
-export default function CardProduto(props) {
+export default function CardProdutos(props) {
     return (
         <div className="card my-3">
             <div className="card-header">
@@ -16,10 +16,10 @@ export default function CardProduto(props) {
     )
 }
 
-CardProduto.defaultProps = {
+CardProdutos.defaultProps = {
     nome:'Produto',
     desc:'Descrição do produto',
-    valor:'**,**',
-    qtd:'0',
+    valor:0,
+    qtd:0,
     imageSrc:'produtos/imagempadrao.jpeg'
 }
