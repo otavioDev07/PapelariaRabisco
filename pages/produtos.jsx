@@ -20,7 +20,6 @@ export default function produtos(){
           fetchProdutos();
         }, []);
     
-
     return(
         <main>
             <Headerb />

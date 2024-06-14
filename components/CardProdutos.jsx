@@ -4,7 +4,9 @@ export default function CardProdutos(props) {
             <div className="card-header">
                 <h5 className="card-title">{props.nome}</h5>
             </div>
-            <img src={props.imageSrc} className="card-img-top"/>
+            <img src={`produtos/${props.nome}.png`} onError={(e) => {
+                e.target.src = 'produtos/imagempadrao.png'
+            }} className="card-img-top"/>
             <div className="card-body">
                 <p className="card-text">{props.desc}</p>
                 <button type="button" class="btn btn-outline-info">R$ {props.valor}</button>
@@ -20,6 +22,5 @@ CardProdutos.defaultProps = {
     nome:'Produto',
     desc:'Descrição do produto',
     valor:0,
-    qtd:0,
-    imageSrc:'produtos/imagempadrao.jpeg'
+    qtd:0
 }
