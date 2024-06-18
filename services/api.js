@@ -13,7 +13,7 @@ export const getProdutos = async () => {
   }
 };
 
-export const addProduto = async (produto) => {
+export const addProduto = async produto => {
   try {
     const response = await fetch(`${baseURL}/produto`, {
       method: 'POST',
