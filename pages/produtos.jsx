@@ -3,24 +3,27 @@ import PageTitle from '../components/PageTitle'
 import CardList from '@/components/CardList'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import { getProdutos } from '@/services/api'
 export default function produtos(){
     const [produtos, setProdutos] = useState([]);
-      
-        useEffect(() => {
-          const fetchProdutos = async () => {
-            try {
-              const data = axios.get('http://localhost:80/produto').then((response) => {
-                setProdutos(response.data);
-              })
-            } catch (error) {
-              console.error("Erro ao buscar produtos:", error);
-            }
-          };
-      
-          fetchProdutos();
-        }, []);
     
+    async function buscaProdutos(){
+      try {
+        const data = await getProdutos()
+        setProdutos(data)
+      } catch (error) {
+        console.error('Erro ao buscar produtos.', error)
+      }
+    }
+
+    useEffect(() => {
+      buscaProdutos()
+      const atualiza = setInterval(buscaProdutos, 5000)
+
+      return function () {
+        clearInterval(atualiza)
+      }
+    }, [])
     return(
         <main>
             <Headerb />
