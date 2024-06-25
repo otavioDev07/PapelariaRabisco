@@ -1,4 +1,6 @@
 export default function CardProdutos(props) {
+    // Converte a prop preco para um número
+    const preco = +props.preco
     return (
         <div className="card my-3">
             <div className="card-header">

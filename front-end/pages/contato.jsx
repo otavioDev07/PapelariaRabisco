@@ -18,12 +18,6 @@ export default function contato() {
 
     useEffect(() => {
       buscaFuncionarios()
-      const atualiza = setInterval(buscaFuncionarios, 5000)
-      
-      return function () {
-        clearInterval(atualiza)
-      }
-
     }, [])
     return (
         <main>

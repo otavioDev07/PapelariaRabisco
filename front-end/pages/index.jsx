@@ -1,7 +1,6 @@
 import Headerb from '@/components/Headerb'
 import PageTitle from '@/components/PageTitle'
 import Carrossel from '@/components/Carrossel'
-import { useRouter } from 'next/router'
 
 export default function home(){
     return (
