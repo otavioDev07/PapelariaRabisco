@@ -1,6 +1,7 @@
 import Headerb from '@/components/Headerb'
 import PageTitle from '@/components/PageTitle'
 import Carrossel from '@/components/Carrossel'
+import { useRouter } from 'next/router'
 
 export default function home(){
     return (
@@ -8,7 +9,6 @@ export default function home(){
             <Headerb />
             <PageTitle text="Seja bem vindo a Papelaria Rabisco." color="success" />
             <Carrossel />
-            {/* Restante da página */}
         </>
     )
 }
