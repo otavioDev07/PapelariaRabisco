@@ -1,11 +1,9 @@
 // Esta página é responsável por renderizar cada produto de forma individual. 
 import Headerb from '@/components/Headerb' 
-import Titulo from '@/components/Titulo'    
-
+import PageTitle from '@/components/PageTitle'    
 import { useRouter } from 'next/router'     
 import { useEffect, useState } from 'react' 
-
-import { getProdutoId } from '@/services/apiRabisco' 
+import { getProdutoId } from '@/services/api' 
 import Link from 'next/link'
 
 export default function id() {
@@ -54,31 +52,26 @@ export default function id() {
     }
 
     // Correção do tipo do preço, de string para number e formatação para duas casas decimais
-    const precoFormatado = Number(produto.preco).toFixed(2)
+    const precoFormatado = Number(produto.valor).toFixed(2)
 
     return (
         <>
-            <Headerb />  // Renderiza o componente de cabeçalho
-            <Titulo texto={produto.nome} /> // Renderiza o título com o nome do produto
+            <Headerb />
+            <PageTitle texto={produto.nome} /> 
             <div className="container my-4">
                 <div className="row text-center my-2">
                     <div className="col-sm-12 col-lg-4">
-                        // Renderiza a imagem do produto
                         <img src={`/produtos/${produto.nome}.png`} className="img-fluid" alt="..." />
                     </div>
                     <div className="col-sm-12 col-lg-6 d-flex flex-column align-items-center">
-                        // Renderiza a descrição do produto
-                        <p className="card-text">{produto.descricao}</p>
-                        // Renderiza o preço do produto formatado
+                        <p className="card-text">{produto.desc}</p>
                         <a href="#" className="btn btn-primary">R$ {precoFormatado}</a>
-                        // Renderiza a quantidade de unidades em estoque
                         <h5 className="card-text text-success text-center">
-                            {produto.quantidade} unidade (s) em estoque
+                            {produto.qtd} unidade (s) em estoque
                         </h5>
                     </div>
                 </div>
                 <div className="row text-center">
-                    // Renderiza um botão para voltar à página de produtos
                     <Link href="/produtos"><button type="button" className="btn btn-dark">Voltar</button></Link>
                 </div>
             </div>

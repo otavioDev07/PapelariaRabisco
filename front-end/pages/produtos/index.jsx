@@ -4,6 +4,7 @@ import CardList from '@/components/CardList'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { useEffect, useState } from 'react'
 import { getProdutos } from '@/services/api'
+import { getProdutoNome } from '@/services/api'
 export default function produtos(){
     const [produtos, setProdutos] = useState([]);
     const [resultado, setResultado] = useState(null)
