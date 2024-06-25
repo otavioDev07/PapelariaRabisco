@@ -2,7 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CardFuncionario from "./CardFuncionario"
 
 export default function CardList(props){
-    const {funcionarios} = props
+  const {funcionarios} = props
+
 return(
   <div className="container">
     <div className="row">
