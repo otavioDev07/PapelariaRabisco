@@ -9,7 +9,7 @@ O projeto PapelariaRabisco é um sistema de gestão para uma papelaria, desenvol
 - CSS
 - NEXT.js
 - REACT
-- AXIOS
+- Axios
 
 # Instalação
 - Clone o repositório: git clone https://github.com/otavioDev07/PapelariaRabisco.git
