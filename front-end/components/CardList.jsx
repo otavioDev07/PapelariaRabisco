@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import CardProdutos from "./CardProdutos"
 
 export default function CardList(props){

@@ -1,7 +1,6 @@
 import Headerb from '@/components/Headerb'
 import PageTitle from '@/components/PageTitle'
 import CardList from '@/components/CardList'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { useEffect, useState } from 'react'
 import { getProdutos } from '@/services/api'
 import { getProdutoNome } from '@/services/api'

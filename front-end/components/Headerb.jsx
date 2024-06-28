@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import styles from '../styles/Header.module.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 

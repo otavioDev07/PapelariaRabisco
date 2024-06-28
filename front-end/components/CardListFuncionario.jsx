@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import CardFuncionario from "./CardFuncionario"
 
 export default function CardList(props){
