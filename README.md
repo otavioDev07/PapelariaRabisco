@@ -1,40 +1,28 @@
-transforme isso em markdown: Descrição Geral
+# Descrição Geral
 O projeto PapelariaRabisco é um sistema de gestão para uma papelaria, desenvolvido com um back-end em Python e um front-end em React e Next.js. O sistema permite gerenciar produtos, funcionários, vendas, estoque e outras operações comuns em uma papelaria.
 
-Instalação
+# Instalação
 Clone o repositório:
-bash
-Copy code
-git clone https://github.com/otavioDev07/PapelariaRabisco.git
-Navegue até o diretório do projeto:
-bash
-Copy code
+ git clone https://github.com/otavioDev07/PapelariaRabisco.git
+ Navegue até o diretório do projeto:
 cd PapelariaRabisco
 Instale as dependências do front-end e do back-end:
-bash
-Copy code
 pip install -r requirements.txt  # Para o back-end
 npm install  # Para o front-end
 Configure o banco de dados executando o script SQL fornecido:
-bash
-Copy code
 mysql -u seu_usuario -p seu_banco_de_dados < script.sql
 Uso
 Para iniciar o projeto, execute os seguintes comandos em dois terminais diferentes:
 
 No terminal do back-end:
 
-bash
-Copy code
 python main.py
 No terminal do front-end:
 
-bash
-Copy code
 npm run dev
 A aplicação estará disponível no endereço http://localhost:3000.
 
-Estrutura de Pastas
+# Estrutura de Pastas
 components: Contém os componentes React reutilizáveis.
 
 CardFuncionario.jsx: Componente para exibir informações dos funcionários.
@@ -78,29 +66,25 @@ Gerenciamento de Funcionários:
 GET /api/users: Retorna a lista de funcionários.
 Componentes Front-End:
 
-CardFuncionario: Exibe informações de um funcionário.
-CardList: Lista todos os produtos.
-CardListFuncionario: Lista todos os funcionários.
-CardProdutos: Exibe informações de um produto.
-Carrossel: Exibe um carrossel de imagens.
-Headerb: Cabeçalho com busca integrada.
-PageTitle: Título da página.
-Contribuição
+- CardFuncionario: Exibe informações de um funcionário.
+- CardList: Lista todos os produtos.
+- CardListFuncionario: Lista todos os funcionários.
+- CardProdutos: Exibe informações de um produto.
+- Carrossel: Exibe um carrossel de imagens.
+- Headerb: Cabeçalho com busca integrada.
+- PageTitle: Título da página.
+# Contribuição
 Para contribuir com o projeto:
 
 Faça um fork do repositório.
 Crie uma nova branch para suas alterações:
-bash
-Copy code
 git checkout -b minha-nova-funcionalidade
 Faça commit das suas alterações:
-bash
-Copy code
+
 git commit -m "Adiciona nova funcionalidade"
 Envie para o repositório remoto:
-bash
-Copy code
+
 git push origin minha-nova-funcionalidade
 Abra um Pull Request no GitHub.
-Licença
+# Licença
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
