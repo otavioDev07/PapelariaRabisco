@@ -72,3 +72,7 @@ Para contribuir com o projeto:
 - Abra um Pull Request no GitHub.
 # Licença
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+# Contato
+- Rafael Ribas: Instrutor de Programação Web Front-End.
+- João Paulo: Instrutor de Programação Web Back-End.
+- Otávio Neto: Autor
