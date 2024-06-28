@@ -61,15 +61,6 @@ Gerenciamento de Produtos:
 Gerenciamento de Funcionários:
 
 - GET /api/users: Retorna a lista de funcionários.
-#Componentes Front-End:
-
-- CardFuncionario: Exibe informações de um funcionário.
-- CardList: Lista todos os produtos.
-- CardListFuncionario: Lista todos os funcionários.
-- CardProdutos: Exibe informações de um produto.
-- Carrossel: Exibe um carrossel de imagens.
-- Headerb: Cabeçalho com busca integrada.
-- PageTitle: Título da página.
 # Contribuição
 Para contribuir com o projeto:
 
