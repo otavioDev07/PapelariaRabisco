@@ -28,9 +28,9 @@ O projeto PapelariaRabisco é um sistema de gestão para uma papelaria, desenvol
 - Utilize o npm no terminal: npm install axios.
 # Uso
 Para iniciar o projeto, execute os seguintes comandos em dois terminais diferentes:
-## No terminal do back-end:
+### No terminal do back-end:
 - python main.py
-## No terminal do front-end:
+### No terminal do front-end:
 - npm run dev: A aplicação estará disponível no endereço http://localhost:3000.
 
 # Estrutura de Pastas
