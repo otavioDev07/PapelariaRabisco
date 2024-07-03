@@ -14,8 +14,18 @@ O projeto PapelariaRabisco é um sistema de gestão para uma papelaria, desenvol
 # Instalação
 - Clone o repositório: git clone https://github.com/otavioDev07/PapelariaRabisco.git
 - Navegue até o diretório do projeto: cd PapelariaRabisco
-### Instale as dependências do front-end e do back-end:
-- ********
+## Instale as dependências do front-end e do back-end:
+### Python/Flask
+- Baixe e instale a versão mais recente do Python a partir do [site oficial](https://www.python.org/).
+- Instale o Flask: pip install flask
+### mySQL
+- Baixe e instale o MySQL a partir do [site oficial](https://dev.mysql.com/downloads/).
+- Após a instalação, configure o MySQL criando um banco de dados e um usuário com as permissões necessárias.
+- Instale o conector mySQL para Python: pip install mysql-connector-python.
+### REACT/NODE
+- Instale o Node.js a partir do [site oficial](https://nodejs.org/en).
+### Axios
+- Utilize o npm no terminal: npm install axios.
 # Uso
 Para iniciar o projeto, execute os seguintes comandos em dois terminais diferentes:
 ## No terminal do back-end:
